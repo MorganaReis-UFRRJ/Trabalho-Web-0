@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap');
+
+@font-face {
+    font-family: "Honey";
+    src: url("Honey Sweety.otf") format("opentype"), url("Honey Sweety.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LittleBoy";
+    src: url("Little Boy.otf") format("opentype"), url("Little Boy.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./5631800.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Honey', sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("https://t3.ftcdn.net/jpg/05/30/03/40/360_F_530034062_Zfweld9RDiPmKrg1hblsFcIlWafencPt.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'LittleBoy', sans-serif;
+    border: solid;
+    border-color: #593723;
+}
+
+nav {
+    width: 60%;
+    
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+li {
+    color: #593723;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'LittleBoy', sans-serif;
+    margin-top: 20px;
+}
+
+li:hover{
+    color: red;
+}
+
+#logo {
+    width: 87px;
+    height: 87px;
+}
+
+
+
+.gallery {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    left: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    color: #593723;
+    background-image: url("https://t3.ftcdn.net/jpg/05/30/03/40/360_F_530034062_Zfweld9RDiPmKrg1hblsFcIlWafencPt.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Honey', sans-serif;
+    border: solid;
+    padding: 5px;
+    font-size: 40px;
+}
+
+.description {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.conteudo-description {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.rating {
+    font-family: 'LittleBoy', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.title {
+    font-family: 'LittleBoy', sans-serif;
+    font-size: 40px;
+    align-items: center;
+}
+
+.premium-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+#premio {
+    width: 150px;
+    height: 150px;
+}
+
+#premio4 {
+    width: 150px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardapio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.cardapio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.menu {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    color:#593723;
+    font-size: 50px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    font-family: 'LittleBoy', sans-serif;
+}
+
+
+.comida {
+    width: 90%;
+    height: 300px;
+    font-size: 50px;
+    color: #BF4904;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: .5s;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0 20px 10px;
+    flex-direction: column;
+    margin: 10px;
+    font-family: 'LittleBoy', sans-serif;
+    cursor: pointer;
+}
+
+.comida:hover {
+    transform: scale(1.02);
+    color: #593723;
+}
+
+.prato-1 {
+    background-image: url("https://s2.glbimg.com/3HLIjPzDoK0pe-wkWqyL1Kqqr7k=/e.glbimg.com/og/ed/f/original/2016/06/16/thinkstockphotos-100674147.jpg");
+}
+
+.prato-2 {
+    background-image: url("https://a.cdn-hotels.com/gdcs/production95/d1491/bf55428a-d158-432e-8b03-7966686045a3.jpg?impolicy=fcrop&w=1600&h=1066&q=medium");
+}
+
+.prato-3 {
+    background-image: url("https://a.cdn-hotels.com/gdcs/production14/d1593/2203bd05-6049-48f3-8462-5f4661671641.jpg?impolicy=fcrop&w=1600&h=1066&q=medium");
+}
+
+.prato-4 {
+    background-image: url("https://a.cdn-hotels.com/gdcs/production104/d569/503aaebc-f226-4944-8765-ae32d6950470.jpg?impolicy=fcrop&w=1600&h=1066&q=medium");
+}
+
+.prato-5 {
+    background-image: url("https://a.cdn-hotels.com/gdcs/production130/d394/8df37ba6-ba3c-44c4-b0b8-33c9b508a034.jpg?impolicy=fcrop&w=1600&h=1066&q=medium");
+}
+
+.prato-6 {
+    background-image: url("https://4.bp.blogspot.com/-mlhFdOpkKf8/T2AeMdC1X0I/AAAAAAAADPI/Gtw8Aoo132g/s1600/quindim3.jpg");
+}
+
+
+
+
+.reserva-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    background-image: url("https://content.r9cdn.net/rimg/dimg/f2/b2/1821fedf-lm-43386-16d5c477332.jpg?crop=true&width=1366&height=768&xhint=1717&yhint=797");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+.reserva {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    
+}
+
+.reserva-conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+    background-color: gray;
+    margin: 5px;
+}
+
+.formulario {
+    width: 200px;
+    height: 35px;
+    border: solid;
+    background-color: #fff;
+    font-size: 30px;
+    justify-content: center;
+    font-family: 'LittleBoy', sans-serif;
+}
+
+
+
+h3 {
+    background-color: antiquewhite;
+    border: solid;
+    border-bottom-color: black;
+    border-right-color: black;
+    border-left: none;
+    border-top: none;
+    
+}
+
+
+
+
+
+
+
+
+.enviar:hover{
+    color:aliceblue;
+    background-color: brown;
+}
+
+.hotel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hotel-componentes{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+}
+
+.hotel {
+    display: flex;
+    flex-direction: column;
+    border: solid;
+}
+
+.explain {
+    align-items: center;
+    background-color: beige;
+    font-size: 30px;
+}
+
+.picture {
+    background-image: url("https://terrabrasilrestaurante.com.br/wp-content/uploads/2019/01/Restaurante-Choperia-Terra-Brasil-3.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.nh-paragrafo {
+    font-size: 20px;
+    background-color: beige;
+}
+
+.location-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.location {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.numbers {
+    color: #593723;
+    font-size: 30px;
+    font-family: 'LittleBoy', sans-serif;
+}
+
+.maps {
+    position: relative;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.maps iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.mensager {
+    background-color: #fff;
+    color: #593723;
+    font-size: 21px;
+}
+
+footer {
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #593723;
+    font-size: 30px;
+    font-family: 'LittleBoy', sans-serif;
+}
+
+#siga {
+    color: #593723;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: 'LittleBoy', sans-serif;
+}
+
+.contatos {
+    display: flex;
+    justify-content: start;
+}
+
+
+#whatsapp {
+    background-image: url("https://cdn.discordapp.com/attachments/1172902227707437138/1180278537383587890/77220-scalable-vector-graphics-logo-whatsapp-icon-thumb.png?ex=657cd70b&is=656a620b&hm=136883f7b67f7b0ef9fe9a17886e0ef81c83a06db63e96104c8adb256316d4cd&");
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#instagram {
+    background-image: url("https://cdn.discordapp.com/attachments/1172902227707437138/1180278666886918264/instagram-logo-1494D6FE63-seeklogo.png?ex=657cd72a&is=656a622a&hm=e133b39b4f425543062140d99edd5b5c871be33c7b447bf7a95fd716b792b65d&");
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#twitter {
+    background-image: url("https://cdn.discordapp.com/attachments/1172902227707437138/1180278787397652621/X-Logo.png?ex=657cd747&is=656a6247&hm=14317975305c6b2beaf7ecf6e764aa9cb9581a56d412c4b4a85c55e9c2cd62ed&");
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#tiktok {
+    background-image: url("https://cdn.discordapp.com/attachments/1172902227707437138/1180278895556173824/tiktok-logo-B9AC5FE794-seeklogo.png?ex=657cd761&is=656a6261&hm=040c00c8e85754e57d9c7e16a02887147b37de9482b5591e813b242264948db8&");
+    width: 30px;
+    height: 36px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
